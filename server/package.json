@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "server.js",
+    "build": "node esbuild.config.js",
+    "start": "node dist/server.js",
     "dev": "nodemon server.js"
   },
   "author": "sangam mukherjee",
@@ -24,6 +25,10 @@
     "paypal-rest-sdk": "^1.8.1"
   },
   "devDependencies": {
-    "@types/bcryptjs": "^3.0.0"
+    "@types/bcryptjs": "^3.0.0",
+    "@types/node": "^22.14.0",
+    "esbuild": "^0.25.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
